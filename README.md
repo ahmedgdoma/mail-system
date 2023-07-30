@@ -14,14 +14,14 @@ to test you should have latest version of `docker` and `docker-compose`
 
 6- run `docker container exec -it mail_php bash`
 
-6-  in the container terminal run `php yii rabbitmq/consume sheet_process`
+7-  in the container terminal run `php yii rabbitmq/consume sheet_process`
 
-7- `send_email` will have ready queues as much as valid emails in sheet
+8- `send_email` will have ready queues as much as valid emails in sheet
 
-8- validation file added to `web/processedFiles`
+9- validation file added to `web/processedFiles`
 
-9- to view processed Files list visit `http://localhost:8008/sheet/list`
+10- to view processed Files list visit `http://localhost:8008/sheet/list`
 
-10- you can download or view the file report.
+11- you can download or view the file report.
 
-11- OPTIONAL: Run `php yii rabbitmq/consume send_email` in php container opened in `step 6` to validate send email consume
+12- OPTIONAL: Run `php yii rabbitmq/consume send_email` in php container opened in `step 6` to validate send email consume
